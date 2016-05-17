@@ -39,11 +39,43 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="Home">
+          <poly-toolbar id="poly20">
+            <poly-icon-button icon="menu" src="" link="" id="poly20A" style="margin-right: 20px;"></poly-icon-button>
+            <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly20B" flex=""></poly-label>
+            <poly-icon-button icon="refresh" src="" link="" id="poly20C"></poly-icon-button>
+            <poly-icon-button icon="search" src="" link="Interna" id="poly20D"></poly-icon-button>
+          </poly-toolbar>
+          <poly-tabs tabs="[{&quot;name&quot;:&quot;Estudiantes&quot;},{&quot;name&quot;:&quot;Profesores&quot;},{&quot;name&quot;:&quot;Ad/tivos&quot;}]" selected_tab="0" id="poly21"></poly-tabs>
+          <poly-card title="Título" image="http://lorempixel.com/image_output/animals-q-g-640-480-10.jpg" id="poly26"></poly-card>
+          <poly-card title="Título" image="http://lorempixel.com/image_output/food-q-g-640-480-8.jpg" id="poly23" style="color: rgb(33, 33, 33); background-color: rgb(250, 250, 250);"></poly-card>
+          <poly-card title="Título" image="http://lorempixel.com/image_output/fashion-q-g-640-480-5.jpg" id="poly22"></poly-card>
+          <poly-card title="Título" image="http://lorempixel.com/image_output/technics-q-g-640-480-4.jpg" id="poly25"></poly-card>
+        </section>
+        <section id="Interna">
+          <poly-toolbar id="poly28">
+            <poly-icon-button icon="menu" src="" link="Home" id="poly28A" style="margin-right: 20px;"></poly-icon-button>
+            <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly28B" flex=""></poly-label>
+            <poly-icon-button icon="refresh" src="" link="" id="poly28C"></poly-icon-button>
+            <poly-icon-button icon="search" src="" link="" id="poly28D"></poly-icon-button>
+          </poly-toolbar>
+          <poly-layout id="poly29" layout="vertical" style="padding: 0px 20px; margin: 20px 0px 0px; border: none;">
+            <poly-label text="Texto" size="paper-font-subhead" link="" id="poly41"></poly-label>
+            <poly-paragraph text="Energistically recaptiualize cross-platform content and stand-alone technology. Appropriately disintermediate compelling total linkage vis-a-vis cutting-edge deliverables. Assertively engage high standards in applications without leading-edge metrics. Progressively build seamless experiences." size="paper-font-body1" link="" id="poly31"></poly-paragraph>
+            <poly-layout id="poly37" layout="horizontal" style="border: none;">
+              <poly-icon-button icon="favorite" src="" link="" id="poly38"></poly-icon-button>
+              <poly-icon-button icon="icons:star-border" src="" link="" id="poly39"></poly-icon-button>
+              <poly-icon-button icon="icons:face" src="" link="" id="poly40"></poly-icon-button>
+            </poly-layout>
+            <poly-button text="Botón" icon="" raised="" link="" id="poly34" style="width: 100%; margin: 30px 0px 0px;"></poly-button>
+          </poly-layout>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
